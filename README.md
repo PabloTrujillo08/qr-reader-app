@@ -1,27 +1,21 @@
-# QrReaderApp
+# QR Reader Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+This project is an Angular (v16) application that reads QR codes using the qr-scanner library. It displays the video feed from the camera and reads QR codes in real-time, displaying the result immediately after detection. 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Install Dependencies
 
-## Code scaffolding
+### Install qr-scanner
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+First, we need to install the qr-scanner library. This library provides a straightforward way to implement QR code scanning functionality in a web application. 
+To install it, run the following command in your terminal:
 
-## Build
+"npm install qr-scanner"
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Install TypeScript Types for qr-scanner
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To make the qr-scanner library work seamlessly with TypeScript, we also need to install the TypeScript type definitions for qr-scanner. This will allow TypeScript to understand the types and structures used in the qr-scanner library, providing better autocomplete and type-checking features in our development environment. 
+To install it, run the following command in your terminal:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+"npm install --save-dev @types/qr-scanner"
